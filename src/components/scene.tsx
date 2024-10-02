@@ -1,7 +1,7 @@
 import { Circle, Html, OrbitControls, useProgress } from "@react-three/drei";
 import { Canvas, useLoader } from "@react-three/fiber";
 import React, { Suspense } from "react";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 
 function Loader() {
   const { progress } = useProgress();
