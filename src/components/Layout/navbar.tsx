@@ -8,12 +8,12 @@ import {
 } from "@material-tailwind/react";
 import { XMarkIcon, Bars3Icon } from "@heroicons/react/24/solid";
 
-interface NavItemProps {
+/* interface NavItemProps {
   children: React.ReactNode;
   href?: string;
-}
+} */
 
-function NavItem({ children, href }: NavItemProps) {
+/* function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
       <Typography
@@ -31,7 +31,7 @@ function NavItem({ children, href }: NavItemProps) {
       </Typography>
     </li>
   );
-}
+} */
 
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
