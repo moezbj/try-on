@@ -20,5 +20,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "public/assets/*.glb"]
+  "include": ["src", "public/assets/*.glb", "public/Virtual-Glasses-Try-on-main"]
 }

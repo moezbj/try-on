@@ -1,6 +1,5 @@
 import { Suspense, useState } from "react";
 import Scene from "../components/scene";
-import TryOn from "./Section";
 
 const ProductDetail = () => {
   const productDetailItem = {
@@ -16,10 +15,8 @@ const ProductDetail = () => {
     color: ["gray", "violet", "red"],
   };
   const [open, setOpen] = useState(false);
-  /*  const plusMinuceButton =
-    "flex h-8 w-8 cursor-pointer items-center justify-center border duration-100 hover:bg-neutral-100 focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500";
-   */ return (
-    <Suspense fallback={"loading.."} >
+  return (
+    <Suspense fallback={"loading.."}>
       <section className="container flex-grow mx-auto max-w-[1200px] border-b py-5 lg:grid lg:grid-cols-2 lg:py-10  h-fit">
         <div className="container mx-auto px-4 ">
           <Scene path="../assets/glasses.glb" />
@@ -66,7 +63,12 @@ const ProductDetail = () => {
           </div>
           {open && (
             <div className="w-full">
-              <TryOn />
+              <iframe
+                src="../public/Virtual-Glasses-Try-on-main/index.html"
+                width="100%"
+                height="500px"
+                style={{ border: "none" }}
+              ></iframe>
             </div>
           )}
         </div>
